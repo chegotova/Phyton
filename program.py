@@ -1,18 +1,18 @@
-# Задайте список из нескольких чисел. Напишите программу, которая найдёт сумму элементов списка, стоящих на нечётной позиции.
+#Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
+
+#*Пример:*
+
+#- [1.1, 1.2, 3.1, 5.561, 10.01] => 0.56 или 56
 
 import random
-from my_library import enter_digit
-
-array = []
-length_array = int(enter_digit('Введите размер массива: '))
-if length_array < 0:
-    length_array *= -1
-    print('Введено отрицательное число. Данные взяты по модулю')
-for _ in range(length_array):
-    array.append(random.randint(0, 100))
-print(*array)
-sum = 0
-for i in range(length_array):
-    if i % 2 != 0:
-        sum += array[i]
-print(f'Сумма элементов, стоящих на нечетных позициях = {sum}')
+import math
+ 
+number = 123.345
+split_number = list(str(number).split('.'))
+print(split_number)
+ 
+matrix = [random.uniform (2, 6) for item in range(4)]
+for x in range(len(matrix)):
+   print  (math.modf(x))
+    if 
+ 
